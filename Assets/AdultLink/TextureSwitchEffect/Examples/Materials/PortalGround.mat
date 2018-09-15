@@ -6,7 +6,7 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: New Material
+  m_Name: PortalGround
   m_Shader: {fileID: 4800000, guid: 89b2c880b957e6946a34cba3c67e699e, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 0
@@ -63,7 +63,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Set1_albedo:
-        m_Texture: {fileID: 2800000, guid: e5d9b43e84ff9e64da552afa5244d441, type: 3}
+        m_Texture: {fileID: 2800000, guid: 1168845cdcf2b9940ae379f368747553, type: 3}
         m_Scale: {x: 2, y: 2}
         m_Offset: {x: 0, y: 0}
     - _Set1_emission:
@@ -71,16 +71,16 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Set1_metallic:
-        m_Texture: {fileID: 2800000, guid: e5d9b43e84ff9e64da552afa5244d441, type: 3}
+        m_Texture: {fileID: 2800000, guid: 0b1e96326f0c7314dbf689282f3686a2, type: 3}
         m_Scale: {x: 2, y: 2}
         m_Offset: {x: 0, y: 0}
     - _Set1_normal:
-        m_Texture: {fileID: 2800000, guid: e5d9b43e84ff9e64da552afa5244d441, type: 3}
+        m_Texture: {fileID: 2800000, guid: 957662a3daff76c4a8b17816a7fcd6e2, type: 3}
         m_Scale: {x: 2, y: 2}
         m_Offset: {x: 0, y: 0}
     - _Set1_smoothness:
-        m_Texture: {fileID: 2800000, guid: e5d9b43e84ff9e64da552afa5244d441, type: 3}
-        m_Scale: {x: 1, y: 1}
+        m_Texture: {fileID: 2800000, guid: 9b8d444827970324284c49d42823bec7, type: 3}
+        m_Scale: {x: 2, y: 2}
         m_Offset: {x: 0, y: 0}
     - _Set2_albedo:
         m_Texture: {fileID: 2800000, guid: 019d98742919c3248be0a995d4730f22, type: 3}
@@ -116,8 +116,8 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - _Bordercolormodifier: 0
-    - _Bordernoisescale: 0.85
-    - _Borderradius: 0.28
+    - _Bordernoisescale: 1
+    - _Borderradius: 0.35
     - _BumpScale: 1
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
@@ -131,7 +131,7 @@ Material:
     - _Mode: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.02
-    - _Radius: 8.75
+    - _Radius: 12.1
     - _Smoothness: 1
     - _Smoothness1: 1
     - _Smoothness2: 0
@@ -141,12 +141,16 @@ Material:
     - _SrcBlend: 1
     - _UVSec: 0
     - _ZWrite: 1
-    - __dirty: 1
+    - __dirty: 0
     m_Colors:
-    - _Bordercolor: {r: 0, g: 0.88113797, b: 2.323, a: 1}
+    - _Bordercolor: {r: 0, g: 0.88113797, b: 2.3230007, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _Color0: {r: 1, g: 0, b: 0, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _Noisespeed: {r: 0, g: 0.2, b: 0, a: 0}
     - _Set1_emissionColor: {r: 1, g: 1, b: 1, a: 1}
+    - _Set1_offset: {r: 0, g: 0, b: 0, a: 0}
+    - _Set1_tiling: {r: 1, g: 1, b: 0, a: 0}
     - _Set2_emissionColor: {r: 1, g: 1, b: 1, a: 1}
+    - _Set2_offset: {r: 0, g: 0, b: 0, a: 0}
+    - _Set2_tiling: {r: 1, g: 1, b: 0, a: 0}
