@@ -12,10 +12,6 @@ public class Spawner : MonoBehaviour {
 	private float lastTimeSpawned = 0f;
 	public Color[] colors;
 	
-	// Update is called once per frame
-	private void Start() {
-		//colors = new Color[]{Color.red, Color.blue, Color.yellow, Color.green, Color.magenta};
-	}
 	void FixedUpdate () {
 		if (Time.time - lastTimeSpawned > spawnPeriod) {
 			spawn();
@@ -29,6 +25,6 @@ public class Spawner : MonoBehaviour {
 		Color color = colors[Random.Range(0,colors.Length)];
 		mat.SetColor("_Color", color);
 		mat.SetColor("_EmissionColor", color);
-		ball.GetComponent<Rigidbody>().AddForce(spawnDirection*pushStrength*Random.Range(0.8f,1.3f), ForceMode.Impulse);
+		ball.GetComponent<Rigidbody>().AddForce((spawnDirection+Vector3.one*Random.Range(-0.1f,0.1f))*pushStrength*Random.Range(0.8f,1.3f), ForceMode.Impulse);
 	}
 }
