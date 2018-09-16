@@ -6,7 +6,7 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: PortalGround_cutout
+  m_Name: Rocks_walls
   m_Shader: {fileID: 4800000, guid: 98bdbaa5bcf494147b460ba1c6290a82, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 0
@@ -63,7 +63,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Set1_albedo:
-        m_Texture: {fileID: 2800000, guid: 162c810bf5419394188c1c46a5db065e, type: 3}
+        m_Texture: {fileID: 2800000, guid: 312c93ed564bd8840ab4818e3db14d8a, type: 3}
         m_Scale: {x: 2, y: 2}
         m_Offset: {x: 0, y: 0}
     - _Set1_emission:
@@ -75,11 +75,11 @@ Material:
         m_Scale: {x: 2, y: 2}
         m_Offset: {x: 0, y: 0}
     - _Set1_normal:
-        m_Texture: {fileID: 2800000, guid: 3a821c28b70b2b447ab3e66e3a2229e5, type: 3}
+        m_Texture: {fileID: 2800000, guid: c208f128e624c474bb2241affee1c866, type: 3}
         m_Scale: {x: 2, y: 2}
         m_Offset: {x: 0, y: 0}
     - _Set1_smoothness:
-        m_Texture: {fileID: 2800000, guid: 7235df9ad3bd98540b629d630d1f62c5, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 2, y: 2}
         m_Offset: {x: 0, y: 0}
     - _Set2_albedo:
@@ -144,7 +144,7 @@ Material:
     - _ZWrite: 1
     - __dirty: 0
     m_Colors:
-    - _Bordercolor: {r: 2.3230007, g: 0, b: 0, a: 1}
+    - _Bordercolor: {r: 2.3230007, g: 0.38449663, b: 0, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _Color0: {r: 1, g: 0, b: 0, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}

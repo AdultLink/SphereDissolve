@@ -6,8 +6,8 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: PortalGround
-  m_Shader: {fileID: 4800000, guid: 89b2c880b957e6946a34cba3c67e699e, type: 3}
+  m_Name: Rocks_ground
+  m_Shader: {fileID: 4800000, guid: 98bdbaa5bcf494147b460ba1c6290a82, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 0
   m_EnableInstancingVariants: 0
@@ -63,7 +63,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Set1_albedo:
-        m_Texture: {fileID: 2800000, guid: 1168845cdcf2b9940ae379f368747553, type: 3}
+        m_Texture: {fileID: 2800000, guid: 162c810bf5419394188c1c46a5db065e, type: 3}
         m_Scale: {x: 2, y: 2}
         m_Offset: {x: 0, y: 0}
     - _Set1_emission:
@@ -71,15 +71,15 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Set1_metallic:
-        m_Texture: {fileID: 2800000, guid: 0b1e96326f0c7314dbf689282f3686a2, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 2, y: 2}
         m_Offset: {x: 0, y: 0}
     - _Set1_normal:
-        m_Texture: {fileID: 2800000, guid: 957662a3daff76c4a8b17816a7fcd6e2, type: 3}
+        m_Texture: {fileID: 2800000, guid: 3a821c28b70b2b447ab3e66e3a2229e5, type: 3}
         m_Scale: {x: 2, y: 2}
         m_Offset: {x: 0, y: 0}
     - _Set1_smoothness:
-        m_Texture: {fileID: 2800000, guid: 9b8d444827970324284c49d42823bec7, type: 3}
+        m_Texture: {fileID: 2800000, guid: 7235df9ad3bd98540b629d630d1f62c5, type: 3}
         m_Scale: {x: 2, y: 2}
         m_Offset: {x: 0, y: 0}
     - _Set2_albedo:
@@ -116,8 +116,8 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - _Bordercolormodifier: 0
-    - _Bordernoisescale: 1
-    - _Borderradius: 0.35
+    - _Bordernoisescale: 0.8
+    - _Borderradius: 0.27
     - _BumpScale: 1
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
@@ -127,11 +127,12 @@ Material:
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
+    - _Invertsmoothness: 0
     - _Metallic: 0
     - _Mode: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.02
-    - _Radius: 12.1
+    - _Radius: 5.01
     - _Smoothness: 1
     - _Smoothness1: 1
     - _Smoothness2: 0
@@ -143,7 +144,7 @@ Material:
     - _ZWrite: 1
     - __dirty: 0
     m_Colors:
-    - _Bordercolor: {r: 0, g: 0.88113797, b: 2.3230007, a: 1}
+    - _Bordercolor: {r: 2.3230007, g: 0, b: 0, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _Color0: {r: 1, g: 0, b: 0, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}

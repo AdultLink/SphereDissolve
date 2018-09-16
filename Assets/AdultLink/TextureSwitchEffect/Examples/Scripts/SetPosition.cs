@@ -2,8 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[ExecuteInEditMode]
-public class PortalBall : MonoBehaviour {
+public class SetPosition : MonoBehaviour {
 
 	public Material mat;
 	// Update is called once per frame
