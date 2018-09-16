@@ -1,0 +1,34 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class Spawner : MonoBehaviour {
+
+	// Use this for initialization
+	public Transform ballPrefab;
+	public Vector3 spawnDirection;
+	public float pushStrength;
+	public float spawnPeriod = 1f;
+	private float lastTimeSpawned = 0f;
+	public Color[] colors;
+	
+	// Update is called once per frame
+	private void Start() {
+		//colors = new Color[]{Color.red, Color.blue, Color.yellow, Color.green, Color.magenta};
+	}
+	void FixedUpdate () {
+		if (Time.time - lastTimeSpawned > spawnPeriod) {
+			spawn();
+			lastTimeSpawned = Time.time;
+		}
+	}
+
+	private void spawn() {
+		Transform ball = Instantiate(ballPrefab, transform.position, Quaternion.identity);
+		Material mat = ball.GetComponent<Renderer>().material;
+		Color color = colors[Random.Range(0,colors.Length)];
+		mat.SetColor("_Color", color);
+		mat.SetColor("_EmissionColor", color);
+		ball.GetComponent<Rigidbody>().AddForce(spawnDirection*pushStrength*Random.Range(0.8f,1.3f), ForceMode.Impulse);
+	}
+}
