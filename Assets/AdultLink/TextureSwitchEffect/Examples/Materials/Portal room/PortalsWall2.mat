@@ -103,7 +103,7 @@ Material:
     - _ZWrite: 1
     - __dirty: 0
     m_Colors:
-    - _Bordercolor: {r: 1.8160002, g: 1.3796813, b: 0.4406469, a: 1}
+    - _Bordercolor: {r: 1.8, g: 0.437647, b: 1.2000002, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _Noisespeed: {r: 0.5, g: 0, b: 0, a: 0}

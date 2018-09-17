@@ -80,7 +80,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - _Bordernoisescale: 0.4
-    - _Borderradius: 0.31
+    - _Borderradius: 0.4
     - _BumpScale: 1
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
@@ -103,7 +103,7 @@ Material:
     - _ZWrite: 1
     - __dirty: 0
     m_Colors:
-    - _Bordercolor: {r: 1.8160002, g: 0.4406469, b: 1.2089481, a: 1}
+    - _Bordercolor: {r: 1.6, g: 1.217255, b: 0.3890197, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _Noisespeed: {r: 0.5, g: 0, b: 0, a: 0}

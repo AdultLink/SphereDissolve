@@ -9,6 +9,7 @@ public enum SeasonStatus {
 public class SeasonsController : MonoBehaviour {
 
 	// Use this for initialization
+	public ParticleSystem snowPS;
 	public Transform center;
 	public Material[] mats;
 	private SeasonStatus seasonStatus = SeasonStatus.spring;
@@ -66,12 +67,14 @@ public class SeasonsController : MonoBehaviour {
 		setupMatForWinter();
 		inTransition = true;
 		transitionStartTime = Time.time;
+		snowPS.Play();
 	}
 
 	private void switchToSpring() {
 		setupMatForSpring();
 		inTransition = true;
 		transitionStartTime = Time.time;
+		snowPS.Stop();
 	}
 
 	private void setupMatForWinter() {
@@ -98,6 +101,6 @@ public class SeasonsController : MonoBehaviour {
 		for (int i = 0; i < mats.Length; i++) {
 			mats[i].SetFloat("_Radius", _radius);
 		}
-		center.localScale = Vector3.one*_radius;
+		center.localScale = Vector3.one*_radius/2f;
 	}
 }

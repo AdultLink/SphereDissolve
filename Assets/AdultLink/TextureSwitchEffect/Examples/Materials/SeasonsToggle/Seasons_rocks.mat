@@ -63,11 +63,11 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Set1_albedo:
-        m_Texture: {fileID: 2800000, guid: 43342eed5668927419d4f93318256b61, type: 3}
+        m_Texture: {fileID: 2800000, guid: 5fdb48677173e1b4bb29dca0774b2b98, type: 3}
         m_Scale: {x: 2, y: 2}
         m_Offset: {x: 0, y: 0}
     - _Set1_emission:
-        m_Texture: {fileID: 2800000, guid: 43342eed5668927419d4f93318256b61, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Set1_metallic:
@@ -83,11 +83,11 @@ Material:
         m_Scale: {x: 2, y: 2}
         m_Offset: {x: 0, y: 0}
     - _Set2_albedo:
-        m_Texture: {fileID: 2800000, guid: 5fdb48677173e1b4bb29dca0774b2b98, type: 3}
+        m_Texture: {fileID: 2800000, guid: 43342eed5668927419d4f93318256b61, type: 3}
         m_Scale: {x: 2, y: 2}
         m_Offset: {x: 0, y: 0}
     - _Set2_emission:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 43342eed5668927419d4f93318256b61, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Set2_metallic:
@@ -116,8 +116,8 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - _Bordercolormodifier: 0
-    - _Bordernoisescale: 1
-    - _Borderradius: 0.35
+    - _Bordernoisescale: 0
+    - _Borderradius: 0.8
     - _BumpScale: 1
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
@@ -131,7 +131,7 @@ Material:
     - _Mode: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.02
-    - _Radius: 34.99999
+    - _Radius: 105
     - _Smoothness: 1
     - _Smoothness1: 1
     - _Smoothness2: 0
@@ -147,11 +147,11 @@ Material:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _Color0: {r: 1, g: 0, b: 0, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _Noisespeed: {r: 0, g: 0.2, b: 0, a: 0}
-    - _Position: {r: 43.3, g: 2.44, b: 0, a: 0}
-    - _Set1_emissionColor: {r: 0.5889191, g: 0.7592211, b: 0.793, a: 1}
+    - _Noisespeed: {r: 0, g: 0, b: 0, a: 0}
+    - _Position: {r: 62.8, g: 2.44, b: 9.4, a: 0}
+    - _Set1_emissionColor: {r: 1, g: 1, b: 1, a: 1}
     - _Set1_offset: {r: 0, g: 0, b: 0, a: 0}
-    - _Set1_tiling: {r: 5, g: 5, b: 0, a: 0}
-    - _Set2_emissionColor: {r: 1, g: 1, b: 1, a: 1}
+    - _Set1_tiling: {r: 1, g: 1, b: 0, a: 0}
+    - _Set2_emissionColor: {r: 0.5882353, g: 0.7607843, b: 0.7921569, a: 1}
     - _Set2_offset: {r: 0, g: 0, b: 0, a: 0}
-    - _Set2_tiling: {r: 1, g: 1, b: 0, a: 0}
+    - _Set2_tiling: {r: 2, g: 2, b: 0, a: 0}
