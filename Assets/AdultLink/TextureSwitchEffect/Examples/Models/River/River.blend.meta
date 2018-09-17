@@ -13,8 +13,10 @@ ModelImporter:
     2100002: Material
     2300000: Cube
     2300002: Cylinder
+    2300004: //RootNode
     3300000: Cube
     3300002: Cylinder
+    3300004: //RootNode
     4300000: Cylinder
     4300002: Cube
     7400000: Default Take
