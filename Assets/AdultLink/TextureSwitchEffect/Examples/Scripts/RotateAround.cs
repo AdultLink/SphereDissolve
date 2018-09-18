@@ -7,7 +7,7 @@ public class RotateAround : MonoBehaviour {
 	public float rotationSpeed;
 	public Vector3 axis;
 	// Update is called once per frame
-	void FixedUpdate () {
-		transform.RotateAround(pivotPoint.transform.position, axis, rotationSpeed);
+	void Update () {
+		transform.RotateAround(pivotPoint.transform.position, axis, rotationSpeed*Time.deltaTime);
 	}
 }

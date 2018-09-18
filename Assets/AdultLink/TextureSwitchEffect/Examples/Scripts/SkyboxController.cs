@@ -13,7 +13,7 @@ public class SkyboxController : MonoBehaviour {
 	}
 
 	void FixedUpdate () {
-		rotation += rotationSpeed/100f;
+		rotation += rotationSpeed*Time.fixedDeltaTime;
 		if (rotation >= 360f) { rotation = 0f;}
 		else if (rotation <= 0f) {rotation = 360f;}
 		mat.SetFloat("_Rotation", rotation);

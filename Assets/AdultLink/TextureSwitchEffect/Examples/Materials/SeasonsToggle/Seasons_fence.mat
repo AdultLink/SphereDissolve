@@ -6,9 +6,9 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Rocks_walls
-  m_Shader: {fileID: 4800000, guid: 98bdbaa5bcf494147b460ba1c6290a82, type: 3}
-  m_ShaderKeywords: 
+  m_Name: Seasons_fence
+  m_Shader: {fileID: 4800000, guid: 89b2c880b957e6946a34cba3c67e699e, type: 3}
+  m_ShaderKeywords: _INVERT2_ON
   m_LightmapFlags: 0
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -18,10 +18,6 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
-    - _Albedo:
-        m_Texture: {fileID: 2800000, guid: 312c93ed564bd8840ab4818e3db14d8a, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
     - _BumpMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -38,10 +34,6 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - _Emission:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
     - _EmissionMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -54,16 +46,8 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - _Metallic:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
         m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _Normal:
-        m_Texture: {fileID: 2800000, guid: c208f128e624c474bb2241affee1c866, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OcclusionMap:
@@ -79,7 +63,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Set1_albedo:
-        m_Texture: {fileID: 2800000, guid: 312c93ed564bd8840ab4818e3db14d8a, type: 3}
+        m_Texture: {fileID: 2800000, guid: dc497a1c91034cd408e031e91f9cc3cc, type: 3}
         m_Scale: {x: 2, y: 2}
         m_Offset: {x: 0, y: 0}
     - _Set1_emission:
@@ -87,19 +71,19 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Set1_metallic:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 0b1e96326f0c7314dbf689282f3686a2, type: 3}
         m_Scale: {x: 2, y: 2}
         m_Offset: {x: 0, y: 0}
     - _Set1_normal:
-        m_Texture: {fileID: 2800000, guid: c208f128e624c474bb2241affee1c866, type: 3}
+        m_Texture: {fileID: 2800000, guid: c9f3347330ea9234d9b236cb65d54819, type: 3}
         m_Scale: {x: 2, y: 2}
         m_Offset: {x: 0, y: 0}
     - _Set1_smoothness:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 9b8d444827970324284c49d42823bec7, type: 3}
         m_Scale: {x: 2, y: 2}
         m_Offset: {x: 0, y: 0}
     - _Set2_albedo:
-        m_Texture: {fileID: 2800000, guid: 019d98742919c3248be0a995d4730f22, type: 3}
+        m_Texture: {fileID: 2800000, guid: 43342eed5668927419d4f93318256b61, type: 3}
         m_Scale: {x: 2, y: 2}
         m_Offset: {x: 0, y: 0}
     - _Set2_emission:
@@ -132,8 +116,8 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - _Bordercolormodifier: 0
-    - _Bordernoisescale: 0.8
-    - _Borderradius: 0.27
+    - _Bordernoisescale: 0.5
+    - _Borderradius: 0.91
     - _BumpScale: 1
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
@@ -144,14 +128,12 @@ Material:
     - _Glossiness: 0.5
     - _GlossyReflections: 1
     - _Invert: 0
-    - _Invertborder: 0
-    - _Invertmask: 0
-    - _Invertsmoothness: 0
+    - _Invert2: 1
     - _Metallic: 0
     - _Mode: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.02
-    - _Radius: 5.01
+    - _Radius: 4
     - _Smoothness: 1
     - _Smoothness1: 1
     - _Smoothness2: 0
@@ -159,26 +141,23 @@ Material:
     - _SpecularHighlights: 1
     - _Sphereradius: 2.45
     - _SrcBlend: 1
-    - _Toggle1: 0
-    - _Toggle2: 0
     - _UVSec: 0
     - _ZWrite: 1
     - __dirty: 0
     m_Colors:
-    - _Albedo_tint: {r: 1, g: 1, b: 1, a: 1}
-    - _Bordercolor: {r: 2.3230007, g: 0.38449663, b: 0, a: 1}
+    - _Bordercolor: {r: 0.44117647, g: 1, b: 0.6762677, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _Color0: {r: 1, g: 0, b: 0, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _EmissionTint: {r: 1, g: 1, b: 1, a: 1}
-    - _Emission_tint: {r: 1, g: 1, b: 1, a: 1}
-    - _Noisespeed: {r: 0, g: 0.2, b: 0, a: 0}
-    - _Offset: {r: 0, g: 0, b: 0, a: 0}
-    - _Position: {r: -48.146217, g: 5.1310997, b: 10.187317, a: 0}
-    - _Set1_emissionColor: {r: 1, g: 1, b: 1, a: 1}
+    - _Noisespeed: {r: 0, g: 0, b: 0, a: 0}
+    - _Position: {r: 51.533, g: 7.5497, b: 10.883, a: 0}
+    - _Set1_albedo_tint: {r: 0.99513185, g: 1, b: 0.9117647, a: 1}
+    - _Set1_emissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _Set1_emission_tint: {r: 1, g: 1, b: 1, a: 1}
     - _Set1_offset: {r: 0, g: 0, b: 0, a: 0}
-    - _Set1_tiling: {r: 1, g: 1, b: 0, a: 0}
-    - _Set2_emissionColor: {r: 1, g: 1, b: 1, a: 1}
+    - _Set1_tiling: {r: 2, g: 2, b: 0, a: 0}
+    - _Set2_albedo_tint: {r: 1, g: 0.99655175, b: 0.9852941, a: 1}
+    - _Set2_emissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _Set2_emission_tint: {r: 1, g: 1, b: 1, a: 1}
     - _Set2_offset: {r: 0, g: 0, b: 0, a: 0}
-    - _Set2_tiling: {r: 1, g: 1, b: 0, a: 0}
-    - _Tiling: {r: 1, g: 1, b: 0, a: 0}
+    - _Set2_tiling: {r: 5, g: 5, b: 0, a: 0}

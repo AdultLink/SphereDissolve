@@ -30,33 +30,19 @@ public class SeasonsController : MonoBehaviour {
 		centerMat = center.GetComponent<Renderer>().material;
 		mats_initial = new Material[mats.Length];
 		radius = initialRadius;
-		transitionAmount = (targetRadius - initialRadius) * Time.fixedDeltaTime / transitionTime;
+		transitionAmount = (targetRadius - initialRadius) * Time.deltaTime / transitionTime;
 		setPosition(center);
 		setRadius(initialRadius);
 		copyInitialMats();
 	}
 	
 	// Update is called once per frame
-	void FixedUpdate () {
-		if (inTransition) {
-			if (Time.time - transitionStartTime < transitionTime) {
-				radius += transitionAmount;
-				radius = Mathf.Clamp(radius, initialRadius, targetRadius);
-				setRadius(radius);
-				centerMat.SetFloat("_Opacity",(1-((radius-initialRadius)/(targetRadius-initialRadius)))/2f);
-			}
-			else {
-				inTransition = false;
-				radius = initialRadius;
-				setRadius(radius);
-				//toggleTextures();
-				toggleInvert();
-				if (seasonStatus == SeasonStatus.winter) snowPS.Play();
-			}
-		}
-	}
+
 
 	private void Update() {
+		transitionAmount = (targetRadius - initialRadius) * Time.deltaTime / transitionTime;
+
+
 		if (Input.GetKeyDown(KeyCode.Space) && !inTransition) {
 			switch (seasonStatus) {
 				case SeasonStatus.winter:
@@ -72,6 +58,22 @@ public class SeasonsController : MonoBehaviour {
 					break;
 			}
 
+		}
+
+		if (inTransition) {
+			if (Time.time - transitionStartTime < transitionTime) {
+				radius += transitionAmount;
+				radius = Mathf.Clamp(radius, initialRadius, targetRadius);
+				setRadius(radius);
+				centerMat.SetFloat("_Opacity",(1-((radius-initialRadius)/(targetRadius-initialRadius)))/2f);
+			}
+			else {
+				inTransition = false;
+				radius = initialRadius;
+				setRadius(radius);
+				toggleInvert();
+				if (seasonStatus == SeasonStatus.winter) snowPS.Play();
+			}
 		}
 	}
 
@@ -107,28 +109,6 @@ public class SeasonsController : MonoBehaviour {
 		}
 		center.localScale = Vector3.one*_radius/2f;
 	}
-
-	private void toggleTextures() {
-		for (int i = 0; i < mats.Length; i++) {
-			Material mat = mats[i];
-			//SWITCH ALBEDOS
-			Texture tempTex = mat.GetTexture("_Set2_albedo");
-			mat.SetTexture("_Set2_albedo", mat.GetTexture("_Set1_albedo"));
-			mat.SetTexture("_Set1_albedo", tempTex);
-
-			//SWITCH TILINGS
-			Vector3 tempTiling = mat.GetVector("_Set2_tiling");
-			mat.SetVector("_Set2_tiling", mat.GetVector("_Set1_tiling"));
-			mat.SetVector("_Set1_tiling", tempTiling);
-
-			//SWITCH ALBEDO TINTS
-			Color tempColor = mat.GetColor("_Set2_albedo_tint");
-			mat.SetColor("_Set2_albedo_tint", mat.GetColor("_Set1_albedo_tint"));
-			mat.SetColor("_Set1_albedo_tint", tempColor);
-
-		}
-	}
-
 	private void copyInitialMats() {
 		for (int i = 0; i < mats.Length; i++) {
 			mats_initial[i] = new Material(mats[i]);
