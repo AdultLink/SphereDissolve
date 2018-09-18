@@ -7,7 +7,6 @@ public class TogglePS : MonoBehaviour {
 	void OnTriggerEnter(Collider other)
 	{
 		if (other.gameObject.CompareTag("InteractablePS")) {
-			Debug.Log("Collided");
 			ParticleSystem ps = other.GetComponent<ParticleSystem>();
 			if (ps.isEmitting) {
 				ps.Stop();

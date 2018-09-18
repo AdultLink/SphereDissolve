@@ -49,7 +49,8 @@ public class SeasonsController : MonoBehaviour {
 				inTransition = false;
 				radius = initialRadius;
 				setRadius(radius);
-				toggleTextures();
+				//toggleTextures();
+				toggleInvert();
 				if (seasonStatus == SeasonStatus.winter) snowPS.Play();
 			}
 		}
@@ -153,6 +154,12 @@ public class SeasonsController : MonoBehaviour {
 	private void stopRiverPS() {
 		for (int i = 0; i < riverPS.Length; i++) {
 			riverPS[i].Stop();
+		}
+	}
+
+	private void toggleInvert() {
+		for (int i = 0; i < mats.Length; i++) {
+			mats[i].SetFloat("_Invert", 1f - mats[i].GetFloat("_Invert"));
 		}
 	}
 }

@@ -8,7 +8,7 @@ Material:
   m_PrefabInternal: {fileID: 0}
   m_Name: Seasons_trees
   m_Shader: {fileID: 4800000, guid: 89b2c880b957e6946a34cba3c67e699e, type: 3}
-  m_ShaderKeywords: 
+  m_ShaderKeywords: _INVERT2_ON
   m_LightmapFlags: 0
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -127,6 +127,8 @@ Material:
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
+    - _Invert: 0
+    - _Invert2: 1
     - _Metallic: 0
     - _Mode: 0
     - _OcclusionStrength: 1
@@ -151,9 +153,11 @@ Material:
     - _Position: {r: 51.533, g: 7.5497, b: 10.883, a: 0}
     - _Set1_albedo_tint: {r: 1, g: 0.7794118, b: 0.7794118, a: 1}
     - _Set1_emissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _Set1_emission_tint: {r: 1, g: 1, b: 1, a: 1}
     - _Set1_offset: {r: 0, g: 0, b: 0, a: 0}
     - _Set1_tiling: {r: 1, g: 1, b: 0, a: 0}
     - _Set2_albedo_tint: {r: 0.86764705, g: 0.95070994, b: 1, a: 1}
     - _Set2_emissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _Set2_emission_tint: {r: 1, g: 1, b: 1, a: 1}
     - _Set2_offset: {r: 0, g: 0, b: 0, a: 0}
     - _Set2_tiling: {r: 5, g: 5, b: 0, a: 0}
