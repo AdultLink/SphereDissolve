@@ -116,7 +116,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - _Bordercolormodifier: 0
-    - _Bordernoisescale: 0.6
+    - _Bordernoisescale: 0.5
     - _Borderradius: 0.91
     - _BumpScale: 1
     - _Cutoff: 0.5
