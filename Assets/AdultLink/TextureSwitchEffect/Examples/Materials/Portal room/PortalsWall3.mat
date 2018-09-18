@@ -120,12 +120,14 @@ Material:
     - _ZWrite: 1
     - __dirty: 0
     m_Colors:
+    - _Albedo_tint: {r: 1, g: 1, b: 1, a: 1}
     - _Bordercolor: {r: 1.6, g: 1.217255, b: 0.3890197, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _Emission_tint: {r: 1, g: 1, b: 1, a: 1}
     - _Noisespeed: {r: 0.5, g: 0, b: 0, a: 0}
     - _Offset: {r: 0, g: 0, b: 0, a: 0}
-    - _Position: {r: -3.5618715, g: -2.604086, b: -83.62098, a: 0}
+    - _Position: {r: 9.738129, g: -2.604086, b: -53.920982, a: 0}
     - _Set1_emissionColor: {r: 1, g: 1, b: 1, a: 1}
     - _Set1_offset: {r: 0, g: 0, b: 0, a: 0}
     - _Set1_tiling: {r: 6, g: 6, b: 0, a: 0}
