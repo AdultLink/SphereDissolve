@@ -26,7 +26,8 @@ public class CameraController : MonoBehaviour {
 	public float rotationAmplitude = 1f;
 	private float angle = 0f;
 	public float oscillationSpeed = 2f;
-	public bool oscillate = false;
+	private bool oscillate = true;
+	public Transform playerTarget;
 
 	void Start () {
 		Cursor.visible = false;
@@ -37,12 +38,6 @@ public class CameraController : MonoBehaviour {
 	}
 	private void Update() {
 
-		//OSCILLATE
-		if (oscillate) {
-			angle = oscillationSpeed*Mathf.Sin(Time.time/rotationAmplitude)*Time.deltaTime;
-			cam.transform.RotateAround(pivotPoint.transform.position, Vector3.up, angle);
-		}
-
 		//CAMERA STUFF
 		if (Input.GetKeyDown(KeyCode.Tab)) {
 			freeView = !freeView;
@@ -50,14 +45,17 @@ public class CameraController : MonoBehaviour {
 			if (!freeView) {
 				setPosition();
 				setCursorVisibility(false);
+				checkOscillate();
+			}
+			else {
+				oscillate = false;
 			}
 		}
 
 		//FREE VIEW
 		if (freeView){
 			if (lockCursor){
-				movementSpeed = Mathf.Max(movementSpeed += Input.GetAxis("Mouse ScrollWheel"), 0.0f);
-				cam.transform.position += (transform.right * Input.GetAxis("Horizontal") + transform.forward * Input.GetAxis("Vertical")) * movementSpeed;
+				cam.transform.position += (cam.transform.right * Input.GetAxis("Horizontal") + cam.transform.forward * Input.GetAxis("Vertical")) * movementSpeed;
 				cam.transform.eulerAngles += new Vector3(-Input.GetAxis("Mouse Y"), Input.GetAxis("Mouse X"), 0f);
 				detectElement();
 			}
@@ -69,6 +67,7 @@ public class CameraController : MonoBehaviour {
 				if (positionIndex < 0){
 					positionIndex = cameraPositions.Length-1;
 				}
+				checkOscillate();
 				setPosition();
 			}
 
@@ -77,6 +76,15 @@ public class CameraController : MonoBehaviour {
 				if (positionIndex >= cameraPositions.Length){
 					positionIndex = 0;
 				}
+				checkOscillate();
+				setPosition();
+			}
+
+			if (positionIndex == 2) {
+				targetPos = playerTarget.position;
+				targetRot = playerTarget.rotation.eulerAngles;
+			}
+			else {
 				setPosition();
 			}
 
@@ -92,6 +100,12 @@ public class CameraController : MonoBehaviour {
 		if (Input.GetKey(KeyCode.Mouse0)) {
 			setCursorVisibility(false);
 		}
+
+		//OSCILLATE
+		if (oscillate) {
+			angle = oscillationSpeed*Mathf.Sin(Time.time/rotationAmplitude)*Time.deltaTime;
+			cam.transform.RotateAround(pivotPoint.transform.position, Vector3.up, angle);
+		} 
 
 	}
 
@@ -125,8 +139,14 @@ public class CameraController : MonoBehaviour {
 		}
 
 		private void toggleLockedIcon() {
-			lockedIcon.SetActive(!lockedIcon.activeInHierarchy);
-			unlockedIcon.SetActive(!unlockedIcon.activeInHierarchy);
+			//lockedIcon.SetActive(!lockedIcon.activeInHierarchy);
+			//unlockedIcon.SetActive(!unlockedIcon.activeInHierarchy);
+		}
+
+		private void checkOscillate() {
+			if (positionIndex == 0) {
+				oscillate = true;
+			} else {oscillate = false;}
 		}
 }
 

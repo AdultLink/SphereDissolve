@@ -11,6 +11,7 @@ public class Spawner : MonoBehaviour {
 	public float spawnPeriod = 1f;
 	private float lastTimeSpawned = 0f;
 	public Color[] colors;
+	public Transform ballParent;
 	
 	void FixedUpdate () {
 		if (Time.time - lastTimeSpawned > spawnPeriod) {
@@ -20,7 +21,7 @@ public class Spawner : MonoBehaviour {
 	}
 
 	private void spawn() {
-		Transform ball = Instantiate(ballPrefab, transform.position, Quaternion.identity);
+		Transform ball = Instantiate(ballPrefab, transform.position, Quaternion.identity, ballParent);
 		Material mat = ball.GetComponent<Renderer>().material;
 		Color color = colors[Random.Range(0,colors.Length)];
 		mat.SetColor("_Color", color);
