@@ -101,5 +101,5 @@ Material:
     - _Emission_tint: {r: 1, g: 1, b: 1, a: 1}
     - _Noisespeed: {r: 0, g: 0.2, b: 0, a: 0}
     - _Offset: {r: 0, g: 0, b: 0, a: 0}
-    - _Position: {r: -20.993847, g: -0.90999997, b: 114.38158, a: 0}
+    - _Position: {r: -18.998112, g: -43.66048, b: 197.59366, a: 0}
     - _Tiling: {r: 40, g: 40, b: 0, a: 0}

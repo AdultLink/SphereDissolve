@@ -6,10 +6,18 @@ public class PlayerController : MonoBehaviour {
     public float speed;
 
     private Rigidbody rb;
+    private Vector3 initialPosition;
 
     void Start ()
     {
+        initialPosition = transform.position;
         rb = GetComponent<Rigidbody>();
+    }
+
+    private void Update() {
+        if (Input.GetKeyDown(KeyCode.R)) {
+            resetPlayerPos();
+        }
     }
 
     void FixedUpdate ()
@@ -20,5 +28,10 @@ public class PlayerController : MonoBehaviour {
         Vector3 movement = new Vector3 (moveHorizontal, 0.0f, moveVertical);
 
         rb.AddForce (movement * speed);
+    }
+
+    private void resetPlayerPos() {
+        transform.position = initialPosition;
+        rb.velocity = Vector3.zero;
     }
 }
