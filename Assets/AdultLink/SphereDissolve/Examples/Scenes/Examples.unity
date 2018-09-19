@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.028414607, g: 0.0150813125, b: 0.0375799, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -16540,7 +16540,7 @@ GameObject:
   m_Component:
   - component: {fileID: 641030679}
   m_Layer: 0
-  m_Name: '[3] Portal room'
+  m_Name: '[2] Portal room'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28052,7 +28052,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1228800035}
   m_Layer: 0
-  m_Name: '[4] Explorer'
+  m_Name: '[3] Explorer'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28074,7 +28074,7 @@ Transform:
   - {fileID: 1127547731}
   - {fileID: 1441952585}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1233559327 stripped
 Transform:
@@ -28814,7 +28814,7 @@ GameObject:
   - component: {fileID: 1337643909}
   - component: {fileID: 1337643910}
   m_Layer: 0
-  m_Name: '[2] Seasons'
+  m_Name: '[4] Seasons'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28836,7 +28836,7 @@ Transform:
   - {fileID: 810136243}
   - {fileID: 2068187019}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1337643910
 MonoBehaviour:
