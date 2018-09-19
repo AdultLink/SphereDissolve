@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+namespace AdultLink {
 public class SetPosition : MonoBehaviour {
 
 	public Material mat;
@@ -9,4 +10,5 @@ public class SetPosition : MonoBehaviour {
 	void Update () {
 		mat.SetVector("_Position", transform.position);
 	}
+}
 }

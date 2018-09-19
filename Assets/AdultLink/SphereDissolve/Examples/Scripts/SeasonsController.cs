@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+namespace AdultLink {
 public enum SeasonStatus {
 	winter,
 	spring,
@@ -142,4 +143,5 @@ public class SeasonsController : MonoBehaviour {
 			mats[i].SetFloat("_Invert", 1f - mats[i].GetFloat("_Invert"));
 		}
 	}
+}
 }

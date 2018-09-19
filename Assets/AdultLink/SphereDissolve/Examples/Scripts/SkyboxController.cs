@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+namespace AdultLink {
 public class SkyboxController : MonoBehaviour {
 
 	public Material mat;
@@ -18,4 +19,5 @@ public class SkyboxController : MonoBehaviour {
 		else if (rotation <= 0f) {rotation = 360f;}
 		mat.SetFloat("_Rotation", rotation);
 	}
+}
 }

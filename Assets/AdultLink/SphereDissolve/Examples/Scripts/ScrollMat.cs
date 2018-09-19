@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+namespace AdultLink {
 public class ScrollMat : MonoBehaviour {
 
 	public Material mat;
@@ -17,4 +18,5 @@ public class ScrollMat : MonoBehaviour {
 		offset += scrollSpeed/1000f;
 		mat.SetVector(offsetPropertyName, offset);
 	}
+}
 }

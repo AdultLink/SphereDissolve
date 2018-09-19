@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+namespace AdultLink {
 public class TogglePS : MonoBehaviour {
 
 	void OnTriggerEnter(Collider other)
@@ -17,4 +18,5 @@ public class TogglePS : MonoBehaviour {
 		}
 		
 	}
+}
 }

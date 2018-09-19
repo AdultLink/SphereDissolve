@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+namespace AdultLink {
 public class Despawn : MonoBehaviour {
 
 	
@@ -12,4 +13,5 @@ public class Despawn : MonoBehaviour {
 				Object.Destroy(other.gameObject);
 			}
 	}
+}
 }

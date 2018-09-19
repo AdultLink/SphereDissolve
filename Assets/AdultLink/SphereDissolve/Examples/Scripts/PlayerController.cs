@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+namespace AdultLink {
 public class PlayerController : MonoBehaviour {
 
     public float speed;
@@ -34,4 +35,5 @@ public class PlayerController : MonoBehaviour {
         transform.position = initialPosition;
         rb.velocity = Vector3.zero;
     }
+}
 }

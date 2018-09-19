@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+namespace AdultLink {
 public class FollowTarget : MonoBehaviour {
 
 	// Use this for initialization
@@ -12,4 +13,5 @@ public class FollowTarget : MonoBehaviour {
 	void Update () {
 		transform.position = target.position + offset;
 	}
+}
 }

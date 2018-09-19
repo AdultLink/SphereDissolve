@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+namespace AdultLink {
 public class Oscillate : MonoBehaviour {
 
 	// Use this for initialization
@@ -15,4 +16,5 @@ public class Oscillate : MonoBehaviour {
 		finalTranslation = direction * amplitude * Mathf.Sin(Time.time*freq) * Time.deltaTime;
 		transform.Translate(finalTranslation.x,finalTranslation.y,finalTranslation.z, Space.World);
 	}
+}
 }

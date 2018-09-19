@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+namespace AdultLink {
 public class RotateAround : MonoBehaviour {
 	public Transform pivotPoint;
 	public float rotationSpeed;
@@ -10,4 +11,5 @@ public class RotateAround : MonoBehaviour {
 	void Update () {
 		transform.RotateAround(pivotPoint.transform.position, axis, rotationSpeed*Time.deltaTime);
 	}
+}
 }

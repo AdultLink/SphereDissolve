@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+namespace AdultLink {
 public class TimeController : MonoBehaviour {
 
 	// Use this for initialization
@@ -25,4 +26,5 @@ public class TimeController : MonoBehaviour {
 			Time.timeScale = timeScale;
 		}
 	}
+}
 }

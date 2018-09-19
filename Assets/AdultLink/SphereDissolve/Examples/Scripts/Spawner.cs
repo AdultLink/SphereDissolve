@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+namespace AdultLink {
 public class Spawner : MonoBehaviour {
 
 	// Use this for initialization
@@ -28,4 +29,5 @@ public class Spawner : MonoBehaviour {
 		mat.SetColor("_EmissionColor", color);
 		ball.GetComponent<Rigidbody>().AddForce((spawnDirection+Vector3.one*Random.Range(-0.1f,0.1f))*pushStrength*Random.Range(0.8f,1.3f), ForceMode.Impulse);
 	}
+}
 }
