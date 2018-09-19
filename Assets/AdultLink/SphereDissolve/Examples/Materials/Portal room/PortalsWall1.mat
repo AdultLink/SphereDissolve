@@ -127,7 +127,7 @@ Material:
     - _Emission_tint: {r: 1, g: 1, b: 1, a: 1}
     - _Noisespeed: {r: 0.5, g: 0, b: 0, a: 0}
     - _Offset: {r: 0, g: 0, b: 0, a: 0}
-    - _Position: {r: 3.300031, g: 12.808279, b: -59.93333, a: 0}
+    - _Position: {r: 16.75695, g: 13.016666, b: 71.63035, a: 0}
     - _Set1_emissionColor: {r: 1, g: 1, b: 1, a: 1}
     - _Set1_offset: {r: 0, g: 0, b: 0, a: 0}
     - _Set1_tiling: {r: 6, g: 6, b: 0, a: 0}

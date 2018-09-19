@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.027264474, g: 0.014344199, b: 0.03589782, a: 1}
+  m_IndirectSpecularColor: {r: 0.06285066, g: 0.028541766, b: 0.07326603, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -1908,7 +1908,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ballPrefab: {fileID: 4461044740104744, guid: 9a9602ef17a560347bfd67b957500aba, type: 2}
-  spawnDirection: {x: 1, y: 0, z: 0}
+  spawnDirection: {x: -1, y: 0, z: 0}
   pushStrength: 20
   spawnPeriod: 0.4
   colors:
@@ -16064,13 +16064,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 501955930}
-  m_LocalRotation: {x: -0.009666926, y: -0.99886054, z: -0.0009688786, w: 0.046725586}
-  m_LocalPosition: {x: 23.81, y: 8.03, z: -18.1}
+  m_LocalRotation: {x: -0.0011700918, y: 0.02590737, z: 0.009644839, w: 0.99961716}
+  m_LocalPosition: {x: -1.9926338, y: 8.238387, z: 28.97905}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -0.163, y: -174.645, z: 1.1010001}
+  m_LocalEulerAnglesHint: {x: -0.163, y: 2.9680002, z: 1.1010001}
 --- !u!114 &501955935
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17457,18 +17457,40 @@ MonoBehaviour:
       this specific example, we are updating the center of the sphere every time the
       red and green void spheres move, to achieve the effect they are, themselves,
       opening a rift through rocks."
-  - name: 
-    pos: {x: 23.81, y: 8.03, z: -18.1}
-    rot: {x: -0.163, y: -174.645, z: 1.101}
-    description: awg
-  - name: Explorer
+  - name: The cake never was a lie
+    pos: {x: -1.992634, y: 8.238387, z: 28.97905}
+    rot: {x: -0.163, y: 2.968, z: 1.101}
+    description: This shader does not mess with actual colliders, it's just a visual
+      effect, but with a bit of trickery we can get pretty convincing results!
+  - name: Explore the world
     pos: {x: -10.14149, y: 6.667841, z: 98.12947}
     rot: {x: 41.632, y: 1.858, z: -0.061}
-    description: 
-  - name: Seasons
+    description: 'What if we invert the effect?
+
+
+      We get a pretty interesting result, perfect for roguelikes or a blind status
+      effect :)
+
+
+      Use WASD to move around and ''R'' to reset.'
+  - name: Season finale
     pos: {x: 29.25, y: 49.18, z: 30.49}
     rot: {x: 39.797, y: 91.97601, z: 0.013}
-    description: 
+    description: 'This example uses a slightly different version of the shader (''SphereDissolve'',
+      and not ''SphereDissolve_cutout'').
+
+
+      What if we want to dissolve from one texture to a different one?
+
+
+      Making use of some clever scripting we can create the illusion of a seamless
+      transition.
+
+
+      Hyaah! Haa! Hyaaaaaaaaaaaaa!
+
+
+      Press ''Space'' for some magic.'
   pivotPoint: {fileID: 1193709453}
   cam: {fileID: 501955933}
   rotationAmplitude: 2
@@ -17684,8 +17706,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 641030678}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.3, y: 8.791613, z: -56.5}
+  m_LocalRotation: {x: -0, y: 0.99978304, z: -0, w: 0.02083252}
+  m_LocalPosition: {x: 16.9, y: 9, z: 68.2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1320214309}
@@ -17694,7 +17716,7 @@ Transform:
   - {fileID: 234519475}
   m_Father: {fileID: 0}
   m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 177.613, z: 0}
 --- !u!1 &651522369
 GameObject:
   m_ObjectHideFlags: 0
@@ -29463,7 +29485,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1228800034}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -13.9, y: -1.16, z: 114.9}
+  m_LocalPosition: {x: 1.5, y: 10.6, z: 114.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1441952585}
@@ -30205,8 +30227,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1337643908}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 101.4, y: 7.8097, z: 13.1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 93.04704, y: 7.8097, z: 22.78238}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 205755435}

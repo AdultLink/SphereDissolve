@@ -6,7 +6,7 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: PortalsWall3
+  m_Name: PortalsWall4
   m_Shader: {fileID: 4800000, guid: 98bdbaa5bcf494147b460ba1c6290a82, type: 3}
   m_ShaderKeywords: _EMISSION _INVERTSMOOTHNESS_ON
   m_LightmapFlags: 0
@@ -121,13 +121,13 @@ Material:
     - __dirty: 0
     m_Colors:
     - _Albedo_tint: {r: 1, g: 1, b: 1, a: 1}
-    - _Bordercolor: {r: 1.6, g: 1.217255, b: 0.3890197, a: 1}
+    - _Bordercolor: {r: 1.1824205, g: 1.6, b: 0.38901958, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _Emission_tint: {r: 1, g: 1, b: 1, a: 1}
     - _Noisespeed: {r: 0.5, g: 0, b: 0, a: 0}
     - _Offset: {r: 0, g: 0, b: 0, a: 0}
-    - _Position: {r: 10.574889, g: -2.3956985, b: 65.35503, a: 0}
+    - _Position: {r: -1.9926298, g: 8.238391, b: 28.979084, a: 0}
     - _Set1_emissionColor: {r: 1, g: 1, b: 1, a: 1}
     - _Set1_offset: {r: 0, g: 0, b: 0, a: 0}
     - _Set1_tiling: {r: 6, g: 6, b: 0, a: 0}
