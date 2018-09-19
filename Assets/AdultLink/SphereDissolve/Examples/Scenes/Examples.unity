@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.038946062, g: 0.01773492, b: 0.046177123, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -15051,8 +15051,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 501955930}
-  m_LocalRotation: {x: 0.031108128, y: -0.9290431, z: 0.07986084, w: 0.35990757}
-  m_LocalPosition: {x: -27.439917, y: 9.708491, z: 24.165056}
+  m_LocalRotation: {x: 0.22706573, y: 0.6794768, z: -0.23554063, w: 0.6567139}
+  m_LocalPosition: {x: 25.071667, y: 51.87954, z: 16.081861}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -16260,7 +16260,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1059623313}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &630443820
 MonoBehaviour:
@@ -16273,10 +16273,36 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54d77e0619190a546aa6813113ca1b6e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  movementSpeed: 1
+  rotationSpeed: 200
+  smoothTime: 20
+  nameText: {fileID: 0}
+  indexText: {fileID: 0}
+  descriptionText: {fileID: 0}
+  lockedIcon: {fileID: 0}
+  unlockedIcon: {fileID: 0}
+  cameraPositions:
+  - name: Void sphere
+    pos: {x: -27.43992, y: 9.708491, z: 24.16506}
+    rot: {x: 9.833, y: -137.649, z: -0.018}
+    description: Void sphere desc
+  - name: Portal room
+    pos: {x: 22.82453, y: 5.747716, z: -20.46672}
+    rot: {x: -4.434, y: -161.391, z: -0.046}
+    description: awg
+  - name: Explorer
+    pos: {x: -10.14149, y: 6.667841, z: 98.12947}
+    rot: {x: 41.632, y: 1.858, z: -0.061}
+    description: 
+  - name: Seasons
+    pos: {x: 25.07167, y: 51.87954, z: 16.08186}
+    rot: {x: 38.194, y: 91.93201, z: -0.058}
+    description: 
   pivotPoint: {fileID: 1193709453}
-  cam: {fileID: 501955934}
+  cam: {fileID: 501955933}
   rotationAmplitude: 2
-  rotationSpeed: 5
+  oscillationSpeed: 2
+  oscillate: 0
 --- !u!1001 &633499785
 Prefab:
   m_ObjectHideFlags: 0
@@ -20060,8 +20086,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 818898925}
-  - {fileID: 630443819}
   - {fileID: 1878714568}
+  - {fileID: 630443819}
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -43567,7 +43593,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1059623313}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1879582450
 GameObject:
