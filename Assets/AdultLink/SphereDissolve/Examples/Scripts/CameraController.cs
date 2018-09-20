@@ -55,7 +55,7 @@ public class CameraController : MonoBehaviour {
 		//FREE VIEW
 		if (freeView){
 			if (lockCursor){
-				cam.transform.position += (cam.transform.right * Input.GetAxis("Horizontal") + cam.transform.forward * Input.GetAxis("Vertical")) * movementSpeed;
+				cam.transform.position += (cam.transform.right * Input.GetAxis("Horizontal") + cam.transform.forward * Input.GetAxis("Vertical")) * movementSpeed * Time.unscaledDeltaTime;
 				cam.transform.eulerAngles += new Vector3(-Input.GetAxis("Mouse Y"), Input.GetAxis("Mouse X"), 0f);
 				detectElement();
 			}
@@ -139,8 +139,8 @@ public class CameraController : MonoBehaviour {
 		}
 
 		private void toggleLockedIcon() {
-			//lockedIcon.SetActive(!lockedIcon.activeInHierarchy);
-			//unlockedIcon.SetActive(!unlockedIcon.activeInHierarchy);
+			lockedIcon.SetActive(!lockedIcon.activeInHierarchy);
+			unlockedIcon.SetActive(!unlockedIcon.activeInHierarchy);
 		}
 
 		private void checkOscillate() {

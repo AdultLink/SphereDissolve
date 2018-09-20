@@ -134,6 +134,10 @@ Material:
     - _OcclusionStrength: 1
     - _Parallax: 0.02
     - _Radius: 3
+    - _Set1_metallic_multiplier: 0
+    - _Set1_smoothness: 0
+    - _Set2_metallic_multiplier: 0.4
+    - _Set2_smoothness: 0
     - _Smoothness: 1
     - _Smoothness1: 1
     - _Smoothness2: 0

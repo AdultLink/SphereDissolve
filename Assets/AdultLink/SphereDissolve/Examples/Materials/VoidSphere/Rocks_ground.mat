@@ -153,7 +153,7 @@ Material:
     - _OcclusionStrength: 1
     - _Parallax: 0.02
     - _Radius: 5
-    - _Smoothness: 1
+    - _Smoothness: 0.23
     - _Smoothness1: 1
     - _Smoothness2: 0
     - _SmoothnessTextureChannel: 0
@@ -175,7 +175,7 @@ Material:
     - _Emission_tint: {r: 1, g: 1, b: 1, a: 1}
     - _Noisespeed: {r: 0, g: 0.2, b: 0, a: 0}
     - _Offset: {r: 0, g: 0, b: 0, a: 0}
-    - _Position: {r: -59.710266, g: 1.7972263, b: 20.131765, a: 0}
+    - _Position: {r: -59.710266, g: -11.8556385, b: 20.131765, a: 0}
     - _Set1_emissionColor: {r: 1, g: 1, b: 1, a: 1}
     - _Set1_offset: {r: 0, g: 0, b: 0, a: 0}
     - _Set1_tiling: {r: 1, g: 1, b: 0, a: 0}
