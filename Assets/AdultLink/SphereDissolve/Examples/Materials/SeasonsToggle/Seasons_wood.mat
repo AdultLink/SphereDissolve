@@ -6,7 +6,7 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Seasons_ground
+  m_Name: Seasons_wood
   m_Shader: {fileID: 4800000, guid: 89b2c880b957e6946a34cba3c67e699e, type: 3}
   m_ShaderKeywords: _INVERT2_ON
   m_LightmapFlags: 0
@@ -63,7 +63,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Set1_albedo:
-        m_Texture: {fileID: 2800000, guid: a12e0dc4a8b7ace4daf9f2e2b73a527c, type: 3}
+        m_Texture: {fileID: 2800000, guid: dc497a1c91034cd408e031e91f9cc3cc, type: 3}
         m_Scale: {x: 2, y: 2}
         m_Offset: {x: 0, y: 0}
     - _Set1_emission:
@@ -151,11 +151,11 @@ Material:
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _Noisespeed: {r: 0, g: 0, b: 0, a: 0}
     - _Position: {r: 93.04704, g: 7.5497, b: 22.78238, a: 0}
-    - _Set1_albedo_tint: {r: 0.94917816, g: 0.96881634, b: 0.9705882, a: 1}
+    - _Set1_albedo_tint: {r: 0.7205882, g: 0.7205882, b: 0.7205882, a: 1}
     - _Set1_emissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _Set1_emission_tint: {r: 1, g: 1, b: 1, a: 1}
     - _Set1_offset: {r: 0, g: 0, b: 0, a: 0}
-    - _Set1_tiling: {r: 5, g: 5, b: 0, a: 0}
+    - _Set1_tiling: {r: 12, g: 1, b: 0, a: 0}
     - _Set2_albedo_tint: {r: 0.9264706, g: 0.9634889, b: 1, a: 1}
     - _Set2_emissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _Set2_emission_tint: {r: 1, g: 1, b: 1, a: 1}

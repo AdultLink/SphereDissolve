@@ -133,7 +133,7 @@ Material:
     - _Mode: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.02
-    - _Radius: 4
+    - _Radius: 3
     - _Smoothness: 1
     - _Smoothness1: 1
     - _Smoothness2: 0

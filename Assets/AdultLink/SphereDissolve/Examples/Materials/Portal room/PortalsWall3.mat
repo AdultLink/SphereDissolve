@@ -50,6 +50,10 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _Metallic:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -106,10 +110,12 @@ Material:
     - _Invertmask: 0
     - _Invertsmoothness: 1
     - _Metallic: 0
+    - _Metallic_multiplier: 0.4
     - _Mode: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.02
     - _Radius: 2.62
+    - _Smoothness: 0.4
     - _Smoothness1: 0
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
