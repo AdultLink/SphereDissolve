@@ -26,6 +26,7 @@ public class SeasonsController : MonoBehaviour {
 	private float transitionAmount;
 	private float radius;
 	private Material centerMat;
+	public RotateAround rodRotator;
 
 	void Start () {
 		centerMat = center.GetComponent<Renderer>().material;
@@ -58,7 +59,7 @@ public class SeasonsController : MonoBehaviour {
 					Debug.Log("Transition defaulted");
 					break;
 			}
-
+			rodRotator.rotationSpeed *= 3f;
 		}
 
 		if (inTransition) {
