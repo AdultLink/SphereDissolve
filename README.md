@@ -1,8 +1,15 @@
-# RadialProgressBar [![Follow](https://img.shields.io/github/followers/adultlink.svg?style=social&label=Follow)](https://github.com/adultlink) ![Size](https://img.shields.io/github/repo-size/adultlink/radialprogressbar.svg) [![License](https://img.shields.io/badge/License-MIT-lightgrey.svg?style=flat)](http://adultlink.mit-license.org) [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.me/adultlink/5usd) 
+# SphereDissolve [![Follow](https://img.shields.io/github/followers/adultlink.svg?style=social&label=Follow)](https://github.com/adultlink) ![Size](https://img.shields.io/github/repo-size/adultlink/radialprogressbar.svg) [![License](https://img.shields.io/badge/License-MIT-lightgrey.svg?style=flat)](http://adultlink.mit-license.org) [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.me/adultlink/5usd) 
 
-![IntroImage](Screenshots/AllInterfaceExamples.gif)
+![IntroImage](Media/Rocks.gif)
 
-This shader allows you to create shiny looking radial progress bars that can be used to display information like character HP, loading status, matchmaking rating progress, car speed, etc. The possibilities are endless.
+This shader works in a similar way to a typical dissolve shader, albeit with two big differences:
+
+1) It makes use of 3D noise instead of a texture, which means:
+   1.1) We don't need to care about UVs and seams.
+   1.2) The effect is consistent among different objects. They are all affected equally. Quality is also scale-independent.
+   1.3) It is a more computationally expensive method.
+
+2) The dissolve effect follows a spherical shape, meaning it can be controlled by setting the center and radius of a virtual sphere. This opens up a lot of possibilities.
 
 The shader can be edited through [Amplify Shader Editor](http://amplify.pt/unity/amplify-shader-editor) and contributions to the project are always welcome!
 
@@ -12,20 +19,15 @@ Project developed using **Unity 2017.4.8f1**. Please use this version if you are
 
 ---
 
-You can also just download a **unitypackage** from the [releases tab](https://github.com/AdultLink/RadialProgressBar/releases) and easily import everything to your project. This will not download the _screenshots_ folder.
+You can also just download a **unitypackage** from the [releases tab](https://github.com/AdultLink/SphereDissolve/releases) and easily import everything to your project. This will not download the _media_ folder.
 
 _Disclaimer: The scripts controlling the behavior of the examples provided are not optimized in any way and should only be taken as quick & dirty examples._
 
 # Table of contents
 1. [Getting started](#getting-started)
-2. [Usage & parameters](#usage-and-parameters)
-   - 2.1 [General settings](#general-settings)
-   - 2.2 [Background settings](#background-settings)
-   - 2.3 [Bar settings](#bar-settings)
-3. [Examples](#examples)
-4. [Parameters list](#parameters-list)
-5. [Donate](#donate)
-6. [License](#license)
+2. [Parameters list](#parameters-list)
+3. [Donate](#donate)
+4. [License](#license)
 
 # Getting started
 
@@ -38,55 +40,6 @@ To get this shader up and running you only need to attach it to a material, and 
 Best is to check the examples provided to get an idea on how to tweak the different parameters, and to take inspiration from them.
 
 This shader comes in two variants; "standard" (the one that will be described here) and "simple". The second one is a simplified version of the first one, which does away with many of the settings.
-
-# Usage and parameters
-
-## General settings
-
-These are settings that affect the whole bar, and they are pretty much self-explanatory. By increasing and decreasing `Fill percentage`, we control the amount of that bar that is filled. This is the main setting for this shader.
-
-<p align="center">
-   <img src="Screenshots/GeneralSettings.jpg">
-</p>
-
-`Rotation` and `Arc range` (0-360) allows you to control the starting and ending angles.
-
-## Background settings
-
-"Background" will always be visible regardless of the fill percentage (unless you turn the opacity all the way down to 0, of course).
-
-<p align="center">
-   <img src="Screenshots/BackgroundSettings.jpg">
-</p>
-
-Here, we can set both the color for the "fill" area of the background, as well as for the border. Additionally, border radial (along the circle) and tangential widths can be set, as well as its opacity.
-
-## Bar settings
-
-This is the meat of the shader, and it is divided into two sections: `Border` and `Fill`. Border settings are very similar to the ones already described for the background, with the caveat that it is possible to specify a `Color (min)` and a `Color (max)`, so that the bar will lerp between them as is fills up.
-
-<p align="center">
-   <img src="Screenshots/BarSettings.jpg">
-</p>
-
-Fill settings, on the other hand, are comprised of three more sections: `Main texture`, `Secondary texture` and `Noise texture`.
-
-If you don't want to use any texture, just leave the slot empty.
-
-They all provide similar parameters to play with, like `opacity` and `contrast`, `tiling` and `offset`. You can make these textures scroll or rotate (which is quite handy for a radial bar) via a dropdown button. Rotation/scrolling speed is customizable.
-
-Again, bar color will lerp between min and max colors. If you don't want this to happen, simply give them both the same value.
-
-It is important to note that the noise texture will be __*MULTIPLIED*__ with the secondary texture, and the result will be __*ADDED*__ to the main texture. This gives you some room to get creative.
-
-# Examples
-
-<p align="center">
-<img src="Screenshots/Example4.gif"> <img src="Screenshots/Example6.gif" width="290" height="292"> <img src="Screenshots/Example5.gif">
-<img src="Screenshots/Example2.gif" width="788" height="443">
-<img src="Screenshots/Example7.gif" width="788" height="355">
-<img src="Screenshots/Example1.gif" width="346" height="295"> <img src="Screenshots/Example3.gif" width="437" height="295">
- </p>
 
 # Parameters list
 
@@ -155,7 +108,7 @@ _Noisetexoffset
 
 </p></details>
 
-<details><summary>"Simplified" version - Click to expand</summary><p>
+<details><summary>"Cutout" version - Click to expand</summary><p>
  
 ```C#
 
