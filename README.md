@@ -32,8 +32,9 @@ Free packages used:
 # Table of contents
 1. [Getting started](#getting-started)
 2. [Parameters list](#parameters-list)
-3. [Donate](#donate)
-4. [License](#license)
+3. [Further reading](#further-reading)
+4. [Donate](#donate)
+5. [License](#license)
 
 # Getting started
 
@@ -140,6 +141,11 @@ _Offset
 ```
 
 </p></details>
+
+# Further reading
+
+- [Minions Art: Quick Game Art Tips - Unity World Position Shader](https://www.patreon.com/posts/quick-game-art-19355776)
+- [Glowfish Interactive: Dissolving the world](http://glowfishinteractive.com/dissolving-the-world-part-1/)
 
 # Donate [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.me/adultlink/5usd)
 
