@@ -23,6 +23,7 @@ You can also just download a **unitypackage** from the [releases tab](https://gi
 
 _Disclaimer: The scripts controlling the behavior of the examples provided are not optimized in any way and should only be taken as quick & dirty examples._
 
+Free packages used:
 - Rock models & textures: [Rock and boulders 2](https://assetstore.unity.com/packages/3d/props/exterior/rock-and-boulders-2-6947)
 - Skybox: [3Skyboxes](https://assetstore.unity.com/packages/2d/textures-materials/sky/3-skyboxes-25142)
 
