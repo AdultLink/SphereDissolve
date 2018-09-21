@@ -1,4 +1,4 @@
-# SphereDissolve [![Follow](https://img.shields.io/github/followers/adultlink.svg?style=social&label=Follow)](https://github.com/adultlink) ![Size](https://img.shields.io/github/repo-size/adultlink/radialprogressbar.svg) [![License](https://img.shields.io/badge/License-MIT-lightgrey.svg?style=flat)](http://adultlink.mit-license.org) [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.me/adultlink/5usd) 
+# SphereDissolve [![Follow](https://img.shields.io/github/followers/adultlink.svg?style=social&label=Follow)](https://github.com/adultlink) [![License](https://img.shields.io/badge/License-MIT-lightgrey.svg?style=flat)](http://adultlink.mit-license.org) [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.me/adultlink/5usd) 
 
 ![IntroImage](Media/Rocks.gif)
 
@@ -23,6 +23,9 @@ You can also just download a **unitypackage** from the [releases tab](https://gi
 
 _Disclaimer: The scripts controlling the behavior of the examples provided are not optimized in any way and should only be taken as quick & dirty examples._
 
+- Rock models & textures: [Rock and boulders 2](https://assetstore.unity.com/packages/3d/props/exterior/rock-and-boulders-2-6947)
+- Skybox: [3Skyboxes](https://assetstore.unity.com/packages/2d/textures-materials/sky/3-skyboxes-25142)
+
 # Table of contents
 1. [Getting started](#getting-started)
 2. [Parameters list](#parameters-list)
@@ -31,12 +34,33 @@ _Disclaimer: The scripts controlling the behavior of the examples provided are n
 
 # Getting started
 
+Check the examples included in the project!
 
+These shader comes in two versions; ``SphereDissolve (cutout)`` and ``SphereDissolve``. The former is the one we want to use if we just want to dissolve a mesh, while the latter allows us to dissolve _into_ a secondary texture set.
+
+The following parameters allow us to customize the effect (cutout version):
 
 <p align="center">
-   <img src="Screenshots/BasicSetup.png">
+   <img src="Media/Parameters.png">
 </p>
 
+``Position`` defines the center of our spherical mask, while ``Radius`` defines its radius. ``Noise scale`` and ``Noise speed`` specify the look of the border. The lower the scale, the rounder it will be. If we want the border to be completely static we should set the speed to (0,0,0,0).
+
+<p align="center">
+   <img src="Media/PortalRoom.gif">
+</p>
+
+By activating the ``Invert`` toggle, we can invert the dissolve mask, which means the only visible area is now the one within the radius.
+
+<p align="center">
+   <img src="Media/Explorer.gif">
+</p>
+
+Lastly, as with the standard shader, we can specify textures for the most common channels. In the case of the "standard" version, parameters are the same, except we have two texture sets. This version of the shader can be used in a clever way to simulate a variety of effects!
+
+<p align="center">
+   <img src="Media/Link.gif">
+</p>
 
 # Parameters list
 
