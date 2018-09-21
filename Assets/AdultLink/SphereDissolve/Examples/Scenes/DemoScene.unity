@@ -17959,7 +17959,7 @@ MonoBehaviour:
       is also scale-independent.\n   1.3) It is a more computationally expensive method.\n\n2)
       The dissolve effect follows a spherical shape, meaning it can be controlled
       by setting the center and radius of a virtual sphere. This opens up a lot of
-      possibilities.. This opens up a lot of possibilities.\n\nIn this specific example,
+      possibilities. This opens up a lot of possibilities.\n\nIn this specific example,
       we are updating the center of the sphere every time the red and green void spheres
       move, to achieve the effect they are, themselves, opening a rift through rocks."
   - name: The cake never was a lie
