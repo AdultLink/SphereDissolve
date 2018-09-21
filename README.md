@@ -4,12 +4,12 @@
 
 This shader works in a similar way to a typical dissolve shader, albeit with two big differences:
 
-1) It makes use of 3D noise instead of a texture, which means:
-   1.1) We don't need to care about UVs and seams.
-   1.2) The effect is consistent among different objects. They are all affected equally. Quality is also scale-independent.
-   1.3) It is a more computationally expensive method.
+- It makes use of 3D noise instead of a texture, which means:
+   - We don't need to care about UVs and seams.
+   - The effect is consistent among different objects. They are all affected equally. Quality is also scale-independent.
+   - It is a more computationally expensive method.
 
-2) The dissolve effect follows a spherical shape, meaning it can be controlled by setting the center and radius of a virtual sphere. This opens up a lot of possibilities.
+- The dissolve effect follows a spherical shape, meaning it can be controlled by setting the center and radius of a virtual sphere. This opens up a lot of possibilities.
 
 The shader can be edited through [Amplify Shader Editor](http://amplify.pt/unity/amplify-shader-editor) and contributions to the project are always welcome!
 
@@ -31,97 +31,85 @@ _Disclaimer: The scripts controlling the behavior of the examples provided are n
 
 # Getting started
 
-To get this shader up and running you only need to attach it to a material, and drop that material onto a quad. That's it, you now have a basic HP Bar!
+
 
 <p align="center">
    <img src="Screenshots/BasicSetup.png">
 </p>
 
-Best is to check the examples provided to get an idea on how to tweak the different parameters, and to take inspiration from them.
-
-This shader comes in two variants; "standard" (the one that will be described here) and "simple". The second one is a simplified version of the first one, which does away with many of the settings.
 
 # Parameters list
 
 <details><summary>"Standard" version - Click to expand</summary><p>
-
+ 
 ```C#
 
 //MAIN SETTINGS
+_Position
 _Radius
-_Arcrange
-_Fillpercentage
-_Globalopacity
-_Rotation
+_Invert
 
-//BACKGROUND
-_Backgroundfillcolor
-_Backgroundopacity
-_Backgroundbordercolor
-_Backgroundborderopacity
-_Backgroundborderradialwidth
-_Backgroundbordertangentwidth
+//BORDER SETTINGS
+_Bordercolor
+_Borderradius
+_Bordernoisescale
+_Noisespeed
 
-//BAR - BORDER
-_Bordermincolor
-_Bordermaxcolor
-_Mainbarborderopacity
-_Mainborderradialwidth
-_Mainbordertangentwidth
+//TEXTURE SET1 SETTINGS
+_Set1_albedo
+_Set1_albedo_tint
+_Set1_normal
+_Set1_emission
+_Set1_emission_tint
+_Set1_metallic
+_Set1_metallic_multiplier
+_Set1_smoothness
+_Set1_tiling
+_Set1_offset
 
-//BAR - MAIN TEXTURE
-_Maintex
-_Barmincolor
-_Barmaxcolor
-_Maintexopacity
-_Maintexcontrast
-_Invertmaintex
-_Mainscrollrotate
-_Maintexscrollspeed
-_Maintexrotationspeed
-_Maintextiling
-_Maintexoffset
-
-//BAR - SECONDARY TEXTURE
-_Secondarytex
-_Barsecondarymincolor
-_Barsecondarymaxcolor
-_Secondarytexopacity
-_Secondarytexcontrast
-_Invertsecondarytex
-_Secondaryscrollrotate
-_Secondarytexscrollspeed
-_Secondarytexrotationspeed
-_Secondarytextiling
-_Secondarytexoffset
-
-//BAR - NOISE TEXTURE
-_Noisetex
-_Noiseintensity
-_Noisetexcontrast
-_Invertnoisetex
-_Noisetexspeed
-_Noisetextiling
-_Noisetexoffset
+//TEXTURE SET2 SETTINGS
+_Set2_albedo
+_Set2_albedo_tint
+_Set2_normal
+_Set2_emission
+_Set2_emission_tint
+_Set2_metallic
+_Set2_metallic_multiplier
+_Set2_smoothness
+_Set2_tiling
+_Set2_offset
 
 ```
 
 </p></details>
 
 <details><summary>"Cutout" version - Click to expand</summary><p>
- 
+
 ```C#
 
 //MAIN SETTINGS
+_Position
 _Radius
-_Arcrange
-_Fillpercentage
-_Globalopacity
-_Rotation
+_Invert
 
-//BAR
-_Barmincolor
-_Barmaxcolor
+//BORDER SETTINGS
+_Bordercolor
+_Borderradius
+_Bordernoisescale
+_Noisespeed
+
+//TEXTURE SETTINGS
+_Albedo
+_Albedo_tint
+_Normal
+_Emission
+_Emission_tint
+_Metallic
+_Metallic_multiplier
+_Smoothness
+_Tiling
+_Offset
+
 ```
 
 </p></details>
