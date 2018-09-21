@@ -15,6 +15,7 @@ public class CameraController : MonoBehaviour {
 	public GameObject lockedIcon;
 	public GameObject unlockedIcon;
 	public CameraPositions[] cameraPositions;
+	public GameObject UIGO;
 	private bool lockCursor = true;
 	private int positionIndex = 0;
 	private Vector3 velocity = Vector3.zero;
@@ -37,6 +38,10 @@ public class CameraController : MonoBehaviour {
 		cam.transform.rotation = Quaternion.Euler(targetRot);
 	}
 	private void Update() {
+
+		if (Input.GetKeyDown(KeyCode.Z)) {
+			UIGO.SetActive(!UIGO.activeInHierarchy);
+		}
 
 		//CAMERA STUFF
 		if (Input.GetKeyDown(KeyCode.Tab)) {
