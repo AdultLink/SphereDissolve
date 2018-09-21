@@ -125,7 +125,7 @@ public class SphereDissolveEditor : ShaderGUI
             var rect = GUILayoutUtility.GetRect(0, int.MaxValue, 60, 60);
             EditorGUI.DrawPreviewTexture(rect, bannerTexture, null, ScaleMode.ScaleAndCrop);
             //
-            EditorGUI.LabelField(rect, "SphereDissolve (cutout)", title);
+            EditorGUI.LabelField(rect, "SphereDissolve", title);
 
             if (GUI.Button(rect, "", linkStyle)) {
                 Application.OpenURL(repoURL);
