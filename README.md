@@ -31,7 +31,7 @@ Free packages used:
 
 # Table of contents
 1. [Getting started](#getting-started)
-2. [Parameters list](#parameters-list)
+2. [Parameter list](#parameter-list)
 3. [Further reading](#further-reading)
 4. [Donate](#donate)
 5. [License](#license)
@@ -66,7 +66,7 @@ Lastly, as with the standard shader, we can specify textures for the most common
    <img src="Media/Link.gif">
 </p>
 
-# Parameters list
+# Parameter list
 
 <details><summary>"Standard" version - Click to expand</summary><p>
  
