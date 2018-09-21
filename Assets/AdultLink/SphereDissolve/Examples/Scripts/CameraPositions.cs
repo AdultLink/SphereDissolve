@@ -9,7 +9,7 @@ namespace AdultLink {
 			public string name;
 			public Vector3 pos;
 			public Vector3 rot;
-			[TextArea(0,10)]
+			[TextArea(0,15)]
 			public string description;
 		
 	}
